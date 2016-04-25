@@ -26,7 +26,7 @@ For original project's usage and documentation please see: <http://jekyllbootstr
 
 ### Themes
 
-Quickly install and use lovely themes with Jekyll Bootstrap 3. Visit [theme gallery](http://jekyllbootstrap3.tk/preview/).
+Quickly install and use lovely themes with Jekyll Bootstrap 3. Visit [theme gallery](http://jekyll-bootstrap-3.github.io/preview).
 
 ## License
 
