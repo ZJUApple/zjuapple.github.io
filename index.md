@@ -1,45 +1,10 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 欢迎！
+tagline: Welcome!
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+「**浙江大学苹果俱乐部**」是以苹果公司软硬件产品为主线的爱好者社团，于 2017 年由苹果公司与浙江大学合作建立。
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/dbtek/jekyll-bootstrap-3)!
-
-
+俱乐部由研发、设计、运营三大团队组成，分别着眼于 Swift / Objective-C 开发、UI / UX 设计、社交平台及产品运营。同时，俱乐部以中国高校计算机大赛・移动应用创新赛、杭州互联网公司为依托，面向竞赛和创业开展学习交流和实践活动，以拓展成员们的视野、锻炼成员们的综合能力。
