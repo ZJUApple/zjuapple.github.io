@@ -63,3 +63,16 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+/* User defined */
+.page-header {
+  padding-bottom: 0;
+}
+
+.post-meta {
+  margin-bottom: 20px;
+}
+
+.icon-time, .icon-user {
+  margin-right: 5px;
+}

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title  }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <meta name="author" content="{{ page.author }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if site.bootswatch-theme %}
@@ -21,7 +21,6 @@
     <![endif]-->
 
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
   </head>
 
@@ -52,10 +51,10 @@
       <hr>
       <footer>
         <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+          &copy; {{ site.time | date: '%Y' }} {{ site.title }}
           <span class="pull-right text-muted">
-            powered by
-            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
+            Powered by
+            <a href="http://jekyll-bootstrap-3.github.io" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
             and <a href="http://bootswatch.com" target="_blank">Bootswatch</a>
           </span>
         </p>

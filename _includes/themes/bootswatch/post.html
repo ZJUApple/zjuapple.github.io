@@ -4,8 +4,12 @@
 
 <div class="row post-full">
   <div class="col-md-12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+    <div class="post-meta">
+      <i class="icon-time"></i>
+      <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+      <br>
+      <i class="icon-user"></i>
+      <span>{{ page.author | default: "佚名" }}</span>
     </div>
     <div class="content">
       {{ content }}
@@ -28,7 +32,7 @@
     {% endunless %}
 
     <hr>
-    
+
     <ul class="pagination">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
