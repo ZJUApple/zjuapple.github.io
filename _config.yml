@@ -14,6 +14,7 @@ kramdown:
 # so be sure to set them if your theme uses them.
 #
 title: 浙江大学苹果俱乐部
+tagline: Apple Club @ ZJU
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
