@@ -1,24 +1,19 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+exclude: [".rvmrc", ".rbenv-version", "Rakefile"]
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap-3
-tagline: Site Tagline
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+title: 浙江大学苹果俱乐部
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -28,7 +23,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url: https://zju-apple.club
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -84,16 +79,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+      short_name : ""
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -102,17 +88,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-***'
-    googleUA :
-        tracking_id : 'UA-***'
-        property_name : 'PROPERTY NAME'
-    getclicky :
-      site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+      tracking_id : ""
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
