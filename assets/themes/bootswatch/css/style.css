@@ -155,4 +155,11 @@
 
 img {
   max-width: 100%;
+  max-height: 512px;
+  margin: 0 auto;
+  display: block;
+}
+
+blockquote {
+  font-size: 1em;
 }
