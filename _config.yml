@@ -112,3 +112,11 @@ JB :
 
 theme-name: bootswatch
 bootswatch-theme: flatly
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
