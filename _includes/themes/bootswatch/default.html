@@ -13,8 +13,9 @@
     {% else %}
       <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet">
     {% endif %}
-    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
@@ -64,5 +65,12 @@
     {% include JB/analytics %}
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <script>
+      $('table').addClass('table table-striped table-hover');
+      $('img').each(function() {
+        $(this).wrap('<a href="' + $(this).attr('src') + '" data-fancybox data-caption="' + $(this).attr('alt') + '"></a>');
+      })
+    </script>
   </body>
 </html>

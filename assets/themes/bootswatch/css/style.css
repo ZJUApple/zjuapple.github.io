@@ -142,3 +142,7 @@
 .icon-time, .icon-user {
   margin-right: 5px;
 }
+
+img {
+  max-width: 100%;
+}
