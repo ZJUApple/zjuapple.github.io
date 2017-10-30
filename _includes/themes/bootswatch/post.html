@@ -5,31 +5,37 @@
 <div class="row post-full">
   <div class="col-md-12">
     <div class="post-meta">
-      <i class="icon-time"></i>
-      <span>{{ page.date | date: "%Y-%m-%d" }}</span>
-      <br>
-      <i class="icon-user"></i>
-      <span>{{ page.author | default: "佚名" }}</span>
+      <ul class="meta-box">
+        <li>
+          <i class="fa fa-calendar"></i>
+          <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+        </li>
+        <li>
+          <i class="fa fa-user-circle-o"></i>
+          <span>{{ page.author | default: "佚名" }}</span>
+        </li>
+      </ul>
+
+      {% unless page.categories == empty %}
+        <ul class="tag-box inline">
+          <li><i class="fa fa-folder-open"></i></li>
+          {% assign categories_list = page.categories %}
+          {% include JB/categories_list %}
+        </ul>
+      {% endunless %}
+
+      {% unless page.tags == empty %}
+        <ul class="tag-box inline">
+          <li><i class="fa fa-tags"></i></li>
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+        </ul>
+      {% endunless %}
     </div>
+
     <div class="content">
       {{ content }}
     </div>
-
-    {% unless page.categories == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-folder-open"></i></li>
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
-      </ul>
-    {% endunless %}
-
-    {% unless page.tags == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-tags"></i></li>
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </ul>
-    {% endunless %}
 
     <hr>
 
