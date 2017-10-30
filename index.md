@@ -3,7 +3,6 @@ layout: page
 title: 欢迎！
 tagline: Welcome!
 ---
-{% include JB/setup %}
 
 「**浙江大学苹果俱乐部**」是以苹果公司软硬件产品为主线的爱好者社团，于 2017 年由苹果公司与浙江大学合作建立。
 
