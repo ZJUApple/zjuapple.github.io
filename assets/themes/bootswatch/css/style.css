@@ -164,6 +164,14 @@ blockquote {
   font-size: 1em;
 }
 
+iframe {
+  max-width: 100%
+}
+
+a {
+  word-wrap: break-word;
+}
+
 .button-group {
   margin-top: 10px;
 }
