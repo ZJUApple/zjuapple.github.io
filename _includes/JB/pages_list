@@ -32,7 +32,7 @@ Usage:
       	  <li>
       	{% endif %}
         {% if node.date %}
-          <span>{{ node.date | date: "%Y-%m-%d" }}<span> &raquo;
+          <span>{{ node.date | date: "%Y-%m-%d" }}</span> &raquo;
         {% endif %}
         <a href="{{ BASE_PATH }}{{ node.url }}" class="active">{{ node.title }}</a></li>
       {% endif %}

@@ -13,7 +13,7 @@ tagline: Welcome!
 <hr>
 <h3>近期文章</h3>
 {% assign pages_list = site.posts | slice: 0, 5  %}
-{% include JB/pages_list %}
+<ul>{% include JB/pages_list %}</ul>
 <div class="button-group">
   <a href="{{ BASE_PATH }}/archive" class="btn btn-xs btn-primary">时间顺序浏览</a>
   <a href="{{ BASE_PATH }}/categories" class="btn btn-xs btn-primary">分类浏览</a>
