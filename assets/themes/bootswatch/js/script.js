@@ -6,7 +6,31 @@ $('img').each(function() {
   $(this).wrap('<a href="' + src + '" data-fancybox data-caption="' + alt + '"></a>');
 });
 
+function validateForm() {
+  function validate(selector, regexp) {
+    if ($(selector).val().match(regexp) == null) {
+      $(selector).parents('.form-group').addClass('has-error');
+      valid = false;
+    }
+  }
+  $('.form-group').removeClass('has-error');
+  var valid = true;
+  validate('#name', /\S/);
+  validate('#sid', /^\d{8}(\d{2})?$/);
+  validate('#speciality', /\S/);
+  validate('#phone', /^\d{11}$/);
+  validate('#profile', /\S/);
+  return valid;
+}
+
 function submitForm() {
+  var error = function(jqxhr) {
+    console.log(jqxhr);
+    alert('提交发生错误，请检查网络状态');
+    $('#submit').prop('disabled', false).text('提交');
+  }
+
+  if (validateForm() == false) return alert('请检查信息填写是否正确');
   $('#submit').prop('disabled', true).text('提交中……');
 
   var baseUrl  = 'https://db.yzyzsun.me';
@@ -14,6 +38,7 @@ function submitForm() {
   $.ajax({
     type: 'GET',
     url: baseUrl + '/_uuids',
+    error,
     success: function(data) {
       var uuid = data.uuids[0];
       var json = { 'UA': navigator.userAgent, '提交时间': new Date().toString() };
@@ -26,6 +51,7 @@ function submitForm() {
         url: baseUrl + '/' + database + '/' + uuid,
         contentType: 'application/json',
         data: JSON.stringify(json),
+        error,
         success: function() {
           alert('报名表提交成功！');
           location.replace('/');
