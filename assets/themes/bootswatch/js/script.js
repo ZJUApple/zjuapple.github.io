@@ -19,6 +19,7 @@ function validateForm() {
   validate('#sid', /^\d{8}(\d{2})?$/);
   validate('#speciality', /\S/);
   validate('#phone', /^\d{11}$/);
+  validate('#email', /^[\w.+\-]+@([A-Za-z0-9\-]+\.)+[A-Za-z]+$/);
   validate('#profile', /\S/);
   return valid;
 }
