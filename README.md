@@ -1,8 +1,6 @@
 # 浙江大学苹果俱乐部
 
-[![Build Status](https://travis-ci.com/yzyzsun/zju-apple.club.svg?token=siQ39Wk4zikfG2LqyRHk&branch=master)](https://travis-ci.com/yzyzsun/zju-apple.club)
-
-本站目前部署在 <https://zju-apple.club>，并已配置了 Webhook 能够随 GitHub 自动更新网站，另外 Travis CI 会显示每一次提交是否能够成功构建网站。
+本站目前部署在 <https://zju-apple.club>，并已配置了 Webhook 能够随 GitHub 自动更新网站。
 
 ## 在线编辑
 
