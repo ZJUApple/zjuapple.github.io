@@ -34,7 +34,7 @@ function submitForm() {
   if (validateForm() == false) return alert('请检查信息填写是否正确');
   $('#submit').prop('disabled', true).text('提交中……');
 
-  var baseUrl  = 'https://db.yzyzsun.me';
+  var baseUrl  = 'https://db.zju-apple.club';
   var database = 'freshmen2017';
   $.ajax({
     type: 'GET',
