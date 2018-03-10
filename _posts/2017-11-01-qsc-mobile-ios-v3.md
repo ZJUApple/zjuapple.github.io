@@ -1,5 +1,5 @@
 ---
-title: 求是潮手机站 V3
+title: 作品展示：求是潮手机站 V3
 author: 求是潮
 category: 作品展示
 ---
