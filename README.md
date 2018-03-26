@@ -7,7 +7,7 @@
 本站的所有文章都使用了 [Markdown 格式](http://wowubuntu.com/markdown/)，图片建议链接外部图床。如果需要创建新的文章，请参考以下步骤：
 
 1. 进入 `_posts` 目录，点击 Create new file 按钮
-2. 将文件按照 `2017-10-10-articles-of-apple-club.md` 的格式命名，该文章的网址将成为 <https://zju-apple.club/2017/10/10/articles-of-apple-club>（因为服务器时间为 UTC，为确保文章能够发出，北京时间 08:00 前请使用前一天的日期）
+2. 将文件按照 `2017-10-10-constitution.md` 的格式命名，该文章的网址将成为 <https://zju-apple.club/2017/10/10/constitution>（因为服务器时间为 UTC，为确保文章能够发出，北京时间 08:00 前请使用前一天的日期）
 3. 文章内容请使用下述模板：
 
 ```markdown
@@ -30,4 +30,4 @@ category: 分类
 3. 执行 `jekyll serve` 默认会在 127.0.0.1:4000 运行一个开发服务器
 4. 另外，`webhook` 目录下是为 GitHub Webhook 配置的自动拉取部署服务，使用了 Web 应用框架 [Sinatra](http://www.sinatrarb.com)，Sinatra 2.0+ 依赖 Ruby 2.2+
 
-关于本站的任何技术问题欢迎联系 <yzyzsun@gmail.com>
+关于本站的任何技术问题欢迎联系 <tech@zju-apple.club>。
