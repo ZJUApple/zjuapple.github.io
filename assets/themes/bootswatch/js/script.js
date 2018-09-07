@@ -36,7 +36,10 @@ function submitForm() {
   $('#submit').prop('disabled', true).text('提交中……');
 
   var baseUrl  = 'https://db.zju-apple.club';
-  var database = 'freshmen2017';
+  var database = 'freshmen';
+  var year = new Date().getFullYear();
+  if (new Date().getMonth() < 8) --year;
+  database += year;
   $.ajax({
     type: 'GET',
     url: baseUrl + '/_uuids',
