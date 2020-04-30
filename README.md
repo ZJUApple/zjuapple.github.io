@@ -1,13 +1,15 @@
 # 浙江大学苹果俱乐部
 
-本站目前部署在 <https://zju-apple.club>，并已配置了 Webhook 能够随 GitHub 自动更新网站。
+本站目前通过 GitHub Pages 部署在 <https://zjuapple.github.io>，不熟悉 Git 的同学可以直接在线编辑，所有更改将即时生效。
+
+~~本站部署在 <https://zju-apple.club>，并已配置了 Webhook 能够随 GitHub 自动更新网站。~~（旧域名将于 2020-09-10 过期不再使用。）
 
 ## 在线编辑
 
 本站的所有文章都使用了 Markdown 格式（[参考文档](https://www.appinn.com/markdown/)），图片建议链接外部图床（如 <https://sm.ms>）。如果需要创建新的文章，请参考以下步骤：
 
 1. 进入 `_posts` 目录，点击右上角 Create new file 按钮
-2. 将文件按照 `1970-01-01-title.md` 的格式命名，该文章的网址将成为 <https://zju-apple.club/1970/01/01/title>（因为服务器时间为 UTC，为确保文章能够发出，北京时间 08:00 前请使用前一天的日期）
+2. 将文件按照 `1970-01-01-title.md` 的格式命名，该文章的网址将成为 <https://zjuapple.github.io/1970/01/01/title>（因为服务器时间为 UTC，为确保文章能够发出，北京时间 08:00 前请使用前一天的日期）
 3. 文章内容请使用下述模板：
 
 ```markdown
